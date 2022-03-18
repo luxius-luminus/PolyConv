@@ -3,7 +3,7 @@ Code for [Object Point Cloud Classification via Poly-Convolutional Architecture 
 
 ### Requirements
 ```
-Python >= 3.7.6, PyTorch >= 1.6.0, torchvision == 0.2.0
+Python >= 3.7.6, PyTorch >= 1.6.0, torchvision >= 0.7.0
 ```
 ### Datasets
 
