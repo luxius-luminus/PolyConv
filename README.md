@@ -34,6 +34,13 @@ and train the architecture of interest with
 python train.py --arch ${arch_name}
 ```
 
+### Reminder
+
+- PolyConv operations are wrapped in a `module_list` object created by function `creat_ops` as defined in `model.py`. 
+It also leverages some functions in `util.py`.
+If you wish to employ PolyConv operations in your project, you might directly go to these two files.
+- The GPU memory consumption varies when using different sorts of PolyConv ops. With a training batch size of 32, it takes approximately 3 RTX 2080Ti for searching, and usually 1~2 RTX 2080Ti for training. But it might cost up to 4 GPU when the architecture is derived from an immature searching.
+
 ### Citation
 If your research use any part of this code, please cite:
 ```
